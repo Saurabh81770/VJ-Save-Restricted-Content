@@ -2,6 +2,25 @@
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
+# ======= ADD THIS SECTION AT THE VERY TOP ========
+from flask import Flask
+import threading
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot is running"
+
+def run_flask():
+    app.run(host="0.0.0.0", port=8080)
+
+# Start Flask in background
+threading.Thread(target=run_flask).start()
+# ================================================
+
+
+# ========== EXISTING CODE (as it is) =============
 from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN
 
@@ -18,19 +37,14 @@ class Bot(Client):
             sleep_threshold=10
         )
 
-      
     async def start(self):
-            
         await super().start()
         print('Bot Started Powered By @VJ_Botz')
 
     async def stop(self, *args):
-
         await super().stop()
         print('Bot Stopped Bye')
 
 Bot().run()
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
+/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
