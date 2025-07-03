@@ -1,7 +1,7 @@
 import os
 
 # Bot token @Botfather
-BOT_TOKEN = os.environ.get("BOT_TOKEN","8065308353:AAGu6alQDE8E-uXDAw8tE9mCgxMIvZnJFRU")
+BOT_TOKEN = os.environ.get("BOT_TOKEN","")
 
 # Your API ID from my.telegram.org
 API_ID = int(os.environ.get("21974035"))
@@ -14,7 +14,7 @@ ADMINS = int(os.environ.get("ADMINS", "7651547474"))
 
 # Your Mongodb Database Url
 # Warning - Give Db uri in deploy server environment variable, don't give in repo.
-DB_URI = os.environ.get("mongodb+srv://wadosis388:fizUO00OrDHbNXdc@cluster0.4xo0ili.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # Warning - Give Db uri in deploy server environment variable, don't give in repo.
+DB_URI = os.environ.get("mongodb+srv://3sonu8177:0FnZW7ZoUvWPNb25@cluster0.yfmr6sp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # Warning - Give Db uri in deploy server environment variable, don't give in repo.
 DB_NAME = os.environ.get("DB_NAME", "vjsavecontentbot")
 
 # If You Want Error Message In Your Personal Message Then Turn It True Else If You Don't Want Then Flase
